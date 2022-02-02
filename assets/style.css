@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color :#6A5BE2;
+    --white :#fff;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+header{
+    background-color: var(--main-color);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem; 
+    z-index: 100;
+}
+
+header a{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+main{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#quizRules , #quizQuestion {
+    padding: 5rem;
+    border: 1.5px solid rgb(140,131,225);
+    box-shadow: 10px 5px 5px rgb(191, 185, 241) ;
+    border-radius: 20px;
+}
+
+#quizRules p{
+    margin: 20px 0;
+}
+
+.startBtn{
+    padding: 12px 30px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 10px;
+
+}
+
+.time{
+    margin-right: 15px;
+}
+
+/* Main page */
+.option{
+    padding: 0.7rem 0 0.7rem 1rem ;
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 100%;
+    background-color:rgb(127, 116, 243);
+    color: var(--white);
+}
+.option:hover{
+    background-color: var(--main-color);
+    color: rgb(255,204,212);
+}
+
+#result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: 5rem;
+    border: 1.5px solid rgb(140,131,225);
+    box-shadow: 10px 5px 5px rgb(191, 185, 241) ;
+    border-radius: 20px;
+}
+.textArea{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.scoreArea{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.scoreArea{
+    margin-top: 20px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#quizQuestion h2{
+    margin-bottom: 30px;
+}
+/* .option input{
+    width: 100%;
+    display: none;
+} */
